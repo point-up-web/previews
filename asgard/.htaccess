@@ -7,11 +7,14 @@ ErrorDocument 404 /404.html
 <IfModule mod_rewrite.c>
   RewriteEngine On
 
-  # Редирект на https и без www — раскомментировать после выпуска SSL
-  # RewriteCond %{HTTPS} off [OR]
-  # RewriteCond %{HTTP_HOST} ^www\. [NC]
-  # RewriteCond %{HTTP_HOST} ^(?:www\.)?(.+)$ [NC]
-  # RewriteRule ^ https://%1%{REQUEST_URI} [L,R=301]
+  # Редирект на https и без www (SSL Let's Encrypt с 01.10.2026). На REG.RU https принимает nginx,
+  # поэтому, кроме %{HTTPS}, смотрим X-Forwarded-Proto — иначе редирект зациклится
+  RewriteCond %{HTTPS} !=on
+  RewriteCond %{HTTP:X-Forwarded-Proto} !=https
+  RewriteCond %{HTTP_HOST} ^(?:www\.)?(.+)$ [NC]
+  RewriteRule ^ https://%1%{REQUEST_URI} [L,R=301]
+  RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+  RewriteRule ^ https://%1%{REQUEST_URI} [L,R=301]
 
   # /page → /page/ для каталогов (URL со слэшем на конце)
   RewriteCond %{REQUEST_FILENAME} -d
