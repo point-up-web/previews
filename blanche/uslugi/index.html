@@ -56,8 +56,8 @@
 <meta name="theme-color" content="#70232c">
 <meta name="format-detection" content="telephone=no">
 
-  <script type="module" crossorigin src="/previews/blanche/assets/main-D7rjssCK.js"></script>
-  <link rel="stylesheet" crossorigin href="/previews/blanche/assets/main-HxdKy3gE.css">
+  <script type="module" crossorigin src="/previews/blanche/assets/main-B2wTZcja.js"></script>
+  <link rel="stylesheet" crossorigin href="/previews/blanche/assets/main-Ch3x2W-Y.css">
 </head>
 <body class="flex min-h-screen flex-col font-sans text-ink"><main id="app" class="flex-1">
     <section class="group relative w-full overflow-hidden bg-[linear-gradient(-14.44deg,#fffaf6_44%,#b7a08e_100%)] lg:h-[785px] lg:data-[variant=short]:h-[597px] lg:data-[variant=photo]:h-auto lg:data-[variant=photo]:min-h-[597px]" data-block="hero" data-variant="short">
@@ -113,7 +113,20 @@
         </ul>
       </li>
       <li data-menu-item><a href="/previews/blanche/akcii/" class="inline-block py-2 text-xl leading-[1.4] transition-opacity duration-300 active:opacity-70 lg:py-0 lg:text-base"><span class="link-line">Акции</span></a></li>
-      <li data-menu-item><a href="/previews/blanche/specialisty/" class="inline-block py-2 text-xl leading-[1.4] transition-opacity duration-300 active:opacity-70 lg:py-0 lg:text-base"><span class="link-line">Специалисты</span></a></li>
+      <li data-menu-item data-submenu class="group/sub relative">
+        <div class="flex items-center gap-1">
+          <a href="/previews/blanche/specialisty/" class="inline-block py-2 text-xl leading-[1.4] transition-opacity duration-300 active:opacity-70 lg:py-0 lg:text-base"><span class="link-line">Специалисты</span></a>
+          <button type="button" data-submenu-toggle aria-expanded="false" aria-controls="submenu-specialisty" aria-label="Показать специалистов" class="flex size-10 shrink-0 cursor-pointer items-center justify-center text-brand transition-transform duration-300 aria-expanded:rotate-180 lg:size-5 lg:group-hover/sub:rotate-180 lg:group-focus-within/sub:rotate-180">
+            <svg width="12" height="7" viewBox="0 0 14 8" fill="none" aria-hidden="true"><path d="M1 1l6 6 6-6" stroke="currentColor" stroke-width="1.6"/></svg>
+          </button>
+        </div>
+        <ul id="submenu-specialisty" aria-label="Специалисты" class="hidden flex-col pb-2 pl-4 group-data-[open]/sub:flex lg:invisible lg:absolute lg:top-full lg:-left-5 lg:z-50 lg:mt-3 lg:flex lg:min-w-[280px] lg:translate-y-2 lg:border-[0.5px] lg:border-brand lg:bg-white lg:py-2 lg:pl-0 lg:opacity-0 lg:shadow-[0_12px_30px_rgba(112,35,44,0.12)] lg:transition-all lg:duration-300 lg:before:absolute lg:before:inset-x-0 lg:before:-top-4 lg:before:h-4 lg:before:content-[''] lg:group-hover/sub:visible lg:group-hover/sub:translate-y-0 lg:group-hover/sub:opacity-100 lg:group-focus-within/sub:visible lg:group-focus-within/sub:translate-y-0 lg:group-focus-within/sub:opacity-100 lg:group-data-[open]/sub:visible lg:group-data-[open]/sub:translate-y-0 lg:group-data-[open]/sub:opacity-100">
+          <li><a href="/previews/blanche/specialisty/nartkova-amina-sultanovna/" class="flex min-h-9 items-center py-1.5 text-lg leading-[1.3] text-ink transition-all duration-300 hover:text-brand focus-visible:text-brand active:opacity-70 lg:px-5 lg:py-2 lg:text-base lg:whitespace-nowrap lg:hover:bg-brand/5 lg:focus-visible:bg-brand/5"><span class="link-line">Нарткова Амина Султановна</span></a></li>
+          <li><a href="/previews/blanche/specialisty/hubieva-fatima-aslanovna/" class="flex min-h-9 items-center py-1.5 text-lg leading-[1.3] text-ink transition-all duration-300 hover:text-brand focus-visible:text-brand active:opacity-70 lg:px-5 lg:py-2 lg:text-base lg:whitespace-nowrap lg:hover:bg-brand/5 lg:focus-visible:bg-brand/5"><span class="link-line">Хубиева Фатима Аслановна</span></a></li>
+          <li><a href="/previews/blanche/specialisty/elchepakova-marianna-arsenovna/" class="flex min-h-9 items-center py-1.5 text-lg leading-[1.3] text-ink transition-all duration-300 hover:text-brand focus-visible:text-brand active:opacity-70 lg:px-5 lg:py-2 lg:text-base lg:whitespace-nowrap lg:hover:bg-brand/5 lg:focus-visible:bg-brand/5"><span class="link-line">Эльчепакова Марианна Арсеновна</span></a></li>
+          <li><a href="/previews/blanche/specialisty/ibragimova-zarina-alimuradovna/" class="flex min-h-9 items-center py-1.5 text-lg leading-[1.3] text-ink transition-all duration-300 hover:text-brand focus-visible:text-brand active:opacity-70 lg:px-5 lg:py-2 lg:text-base lg:whitespace-nowrap lg:hover:bg-brand/5 lg:focus-visible:bg-brand/5"><span class="link-line">Ибрагимова Зарина Алимурадовна</span></a></li>
+        </ul>
+      </li>
       <li data-menu-item><a href="/previews/blanche/pacientam/" class="inline-block py-2 text-xl leading-[1.4] transition-opacity duration-300 active:opacity-70 lg:py-0 lg:text-base"><span class="link-line">Пациентам</span></a></li>
       <li data-menu-item><a href="/previews/blanche/prajs/" class="inline-block py-2 text-xl leading-[1.4] transition-opacity duration-300 active:opacity-70 lg:py-0 lg:text-base"><span class="link-line">Прайс</span></a></li>
       <li data-menu-item><a href="/previews/blanche/blog/" class="inline-block py-2 text-xl leading-[1.4] transition-opacity duration-300 active:opacity-70 lg:py-0 lg:text-base"><span class="link-line">Блог</span></a></li>
@@ -159,7 +172,7 @@
     <h1 class="relative z-10 font-display text-[clamp(30px,3.472vw,50px)] font-medium uppercase leading-[0.91] text-brand lg:max-w-[833px] lg:group-data-[variant=photo]:max-w-[min(600px,55%)]">Услуги клиники Бланш</h1>
     <p class="relative z-10 text-base font-medium leading-[1.2] text-ink lg:max-w-[662px] lg:group-data-[variant=short]:-mt-8 lg:group-data-[variant=photo]:-mt-8 lg:group-data-[variant=photo]:max-w-[min(560px,55%)]">Аппаратные, инъекционные и эстетические методики, трихология, консультации врачей и комплексные программы. Подбор процедуры начинается с оценки состояния кожи и индивидуальных показаний.</p>
     <div class="pointer-events-none relative -mx-4 mt-2 aspect-[746/933] w-[calc(100%+2rem)] max-w-[480px] self-end group-data-[variant=short]:aspect-[2000/1514] lg:absolute lg:top-[-8px] lg:left-[51.94%] lg:m-0 lg:w-[51.8%] lg:max-w-none lg:group-data-[variant=short]:top-0 lg:group-data-[variant=short]:h-[508px] lg:group-data-[variant=short]:left-auto lg:group-data-[variant=short]:right-[clamp(32px,6.25vw,90px)] lg:group-data-[variant=short]:w-[520px] group-data-[variant=photo]:mx-0 group-data-[variant=photo]:aspect-[540/380] group-data-[variant=photo]:w-full group-data-[variant=photo]:max-w-none lg:group-data-[variant=photo]:top-[40px] lg:group-data-[variant=photo]:right-[clamp(32px,6.25vw,90px)] lg:group-data-[variant=photo]:left-auto lg:group-data-[variant=photo]:w-[37.5%]">
-      <img src="/previews/blanche/assets/uslugi-hero-C4lBlbfw.webp" alt="Препараты для контурной пластики Belotero и Revi" width="2000" height="1514" class="size-full object-cover object-top group-data-[variant=short]:object-[65%_50%] group-data-[variant=photo]:object-center" fetchpriority="high">
+      <img src="/previews/blanche/assets/uslugi-hero-C4lBlbfw.webp" style="object-position:" alt="Препараты для контурной пластики Belotero и Revi" width="2000" height="1514" class="size-full object-cover object-top group-data-[variant=short]:object-[65%_50%] group-data-[variant=photo]:object-center" fetchpriority="high">
     </div>
   </div>
 </section>
@@ -366,7 +379,20 @@
           </ul>
         </li>
         <li><a href="/previews/blanche/akcii/" class="link-line transition-opacity duration-300 active:opacity-70">Акции</a></li>
-        <li><a href="/previews/blanche/specialisty/" class="link-line transition-opacity duration-300 active:opacity-70">Специалисты</a></li>
+        <li data-submenu class="group/sub relative">
+          <div class="flex items-center gap-1">
+            <a href="/previews/blanche/specialisty/" class="link-line transition-opacity duration-300 active:opacity-70">Специалисты</a>
+            <button type="button" data-submenu-toggle aria-expanded="false" aria-controls="submenu-specialisty-footer" aria-label="Показать специалистов" class="flex size-6 shrink-0 cursor-pointer items-center justify-center rotate-180 transition-transform duration-300 aria-expanded:rotate-0 lg:group-hover/sub:rotate-0 lg:group-focus-within/sub:rotate-0">
+              <svg width="12" height="7" viewBox="0 0 14 8" fill="none" aria-hidden="true"><path d="M1 1l6 6 6-6" stroke="currentColor" stroke-width="1.6"/></svg>
+            </button>
+          </div>
+          <ul id="submenu-specialisty-footer" aria-label="Специалисты" class="invisible absolute bottom-full left-1/2 z-20 mb-3 min-w-[260px] -translate-x-1/2 translate-y-2 bg-white py-2 opacity-0 shadow-[0_12px_30px_rgba(0,0,0,0.25)] transition-all duration-300 after:absolute after:inset-x-0 after:-bottom-4 after:h-4 after:content-[''] group-data-[open]/sub:visible group-data-[open]/sub:translate-y-0 group-data-[open]/sub:opacity-100 lg:group-hover/sub:visible lg:group-hover/sub:translate-y-0 lg:group-hover/sub:opacity-100 lg:group-focus-within/sub:visible lg:group-focus-within/sub:translate-y-0 lg:group-focus-within/sub:opacity-100">
+            <li><a href="/previews/blanche/specialisty/nartkova-amina-sultanovna/" class="flex items-center px-5 py-2 text-base leading-[1.3] whitespace-nowrap text-ink transition-all duration-300 hover:bg-brand/5 hover:text-brand focus-visible:bg-brand/5 focus-visible:text-brand active:opacity-70">Нарткова Амина Султановна</a></li>
+            <li><a href="/previews/blanche/specialisty/hubieva-fatima-aslanovna/" class="flex items-center px-5 py-2 text-base leading-[1.3] whitespace-nowrap text-ink transition-all duration-300 hover:bg-brand/5 hover:text-brand focus-visible:bg-brand/5 focus-visible:text-brand active:opacity-70">Хубиева Фатима Аслановна</a></li>
+            <li><a href="/previews/blanche/specialisty/elchepakova-marianna-arsenovna/" class="flex items-center px-5 py-2 text-base leading-[1.3] whitespace-nowrap text-ink transition-all duration-300 hover:bg-brand/5 hover:text-brand focus-visible:bg-brand/5 focus-visible:text-brand active:opacity-70">Эльчепакова Марианна Арсеновна</a></li>
+            <li><a href="/previews/blanche/specialisty/ibragimova-zarina-alimuradovna/" class="flex items-center px-5 py-2 text-base leading-[1.3] whitespace-nowrap text-ink transition-all duration-300 hover:bg-brand/5 hover:text-brand focus-visible:bg-brand/5 focus-visible:text-brand active:opacity-70">Ибрагимова Зарина Алимурадовна</a></li>
+          </ul>
+        </li>
         <li><a href="/previews/blanche/pacientam/" class="link-line transition-opacity duration-300 active:opacity-70">Пациентам</a></li>
         <li><a href="/previews/blanche/prajs/" class="link-line transition-opacity duration-300 active:opacity-70">Прайс</a></li>
         <li><a href="/previews/blanche/blog/" class="link-line transition-opacity duration-300 active:opacity-70">Блог</a></li>
