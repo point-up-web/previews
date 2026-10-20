@@ -11,6 +11,9 @@ ErrorDocument 404 /404.html
   RewriteCond %{HTTP_HOST} ^(?:www\.)?blanshe26\.ru$ [NC]
   RewriteRule ^ https://blanche26.ru%{REQUEST_URI} [L,R=301]
 
+  # Страница врача переехала: nartkova → nartokova
+  RewriteRule ^specialisty/nartkova-amina-sultanovna/?$ /specialisty/nartokova-amina-sultanovna/ [L,R=301]
+
   # Редирект на https и без www — раскомментировать после выпуска SSL
   # RewriteCond %{HTTPS} off [OR]
   # RewriteCond %{HTTP_HOST} ^www\. [NC]
